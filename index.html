@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="getCaptcha()">
+    <button class="row">captcha</button>
+  </body>
+  <script>
+    function getCaptcha() {
+      const data = document.getElementsByClassName("row");
+      if (data.length == 1) {
+        location = location;
+      }
+      const captchaBlock = document.getElementById("captchaBlock");
+      const img = captchaBlock.getElementsByTagName("img");
+      const src = img[0].src;
+    }
+
+  </script>
+</html>

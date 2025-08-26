@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "vtop hate",
+  "version": "1.0",
+  "description": "solves that annoying captcha on vtop portal",
+  "host_permissions": [
+    "*://vtop.vit.ac.in/*",
+    "*://vtopcc.vit.ac.in/vtop/*",
+    "*://vtop.vitap.ac.in/*",
+    "*://vtop.vitap.ac.in/vtop/*"
+  ],
+  "permissions": [
+      "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
