@@ -8,16 +8,6 @@
   <body onload="getCaptcha()">
     <button class="row">captcha</button>
   </body>
-  <script>
-    function getCaptcha() {
-      const data = document.getElementsByClassName("row");
-      if (data.length == 1) {
-        location = location;
-      }
-      const captchaBlock = document.getElementById("captchaBlock");
-      const img = captchaBlock.getElementsByTagName("img");
-      const src = img[0].src;
-    }
-
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="main.js"></script>
 </html>
