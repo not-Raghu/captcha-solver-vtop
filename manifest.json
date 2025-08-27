@@ -5,10 +5,7 @@
   "author": "raghu",
   "description": "solves those annoying captchas on vtop portal for you",
   "host_permissions": [
-    "*://vtop.vit.ac.in/*",
-    "*://vtopcc.vit.ac.in/vtop/*",
-    "*://vtop.vitap.ac.in/*",
-    "*://vtop.vitap.ac.in/vtop/*"
+    "https://vtop.vitap.ac.in/vtop/login"
   ],
   "permissions": [
       "activeTab"
