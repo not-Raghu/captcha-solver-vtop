@@ -4,18 +4,15 @@
   "version": "1.0.0",
   "author": "raghu",
   "description": "solves those annoying captchas on vtop portal for you",
-  "host_permissions": [
-    "https://vtop.vitap.ac.in/vtop/login"
-  ],
-  "permissions": [
-      "activeTab"
-  ],
+  "host_permissions": ["https://vtop.vitap.ac.in/vtop/login"],
   "action": {
-   
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png",
+    "default_title": "vtop hate"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://vtop.vitap.ac.in/vtop/login*"],
       "js": ["main.js"]
     }
   ],
